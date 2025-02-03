@@ -13,5 +13,13 @@ npm run dev
 ## 前端部署
 ```
 cd angular
-firebase deploy
+ng deploy
+```
+
+## 前端新增頁面
+```
+cd angular
+ng generate component 頁面名稱
+簡化指令
+ng g c 頁面名稱
 ```
