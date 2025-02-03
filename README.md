@@ -9,3 +9,9 @@ npm start
 cd cloudrun
 npm run dev
 ```
+
+## 前端部署
+```
+cd angular
+firebase deploy
+```

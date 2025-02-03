@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "one-piece-2025",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "one-piece-2025": {
+      "hosting": {
+        "one-piece-2025": [
+          "one-piece-2025"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "one-piece-2025"
+  }
+}
