@@ -1,9 +1,14 @@
 {
-  "hosting": [
-    {
-      "target": "one-piece-2025",
-      "source": ".",
-      "frameworksBackend": {}
+  "hosting": {
+    "target": "angular",
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "asia-east1"
     }
-  ]
+  }
 }
