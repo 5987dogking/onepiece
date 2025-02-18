@@ -32,13 +32,13 @@ export const appConfig: ApplicationConfig = {
     providePerformance(() => getPerformance()),
     provideStorage(() => getStorage()), provideAnimationsAsync(),
     importProvidersFrom(AngularFireModule.initializeApp({
-      apiKey: "AIzaSyCmzVR1xeyutcCDTgR8bdpmYU7WMOeKwDo",
-      authDomain: "sharetoboss.firebaseapp.com",
-      projectId: "sharetoboss",
-      storageBucket: "sharetoboss.firebasestorage.app",
-      messagingSenderId: "541957576326",
-      appId: "1:541957576326:web:298d35a8baa8e0de55e307",
-      measurementId: "G-48LQ5PGH9S"
+      projectId: "one-piece-2025",
+      appId: "1:1032837946468:web:c569bf41a2698712b25371",
+      storageBucket: "one-piece-2025.firebasestorage.app",
+      apiKey: "AIzaSyC2wQT_PZHglyrT_SdM_0FnZDrfhRS05mA",
+      authDomain: "one-piece-2025.firebaseapp.com",
+      messagingSenderId: "1032837946468",
+      measurementId: "G-D3EPNDREYD"
     })),
   ]
 };
