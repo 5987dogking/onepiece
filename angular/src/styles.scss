@@ -45,3 +45,59 @@
     opacity: 0;
   }
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-c {
+  align-items: center;
+  display: flex;
+}
+
+.flex-cc {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flex-cb {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.x-center {
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.y-center {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.xy-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pb-0 .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}

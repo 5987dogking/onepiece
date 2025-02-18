@@ -1,0 +1,30 @@
+<div class="p-3">
+  <p>dbtest works!</p>
+
+  <mat-form-field>
+    <mat-label>名稱</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput [(ngModel)]="data.email">
+  </mat-form-field>
+
+  <button mat-raised-button (click)="addUser()" class="mb-3">新增 Add</button>
+
+  @for (userTest of userTests; track userTest) {
+  <div class="p-3 border rounded-3 mb-3 d-flex flex-column gap-2">
+    <p class="m-0">id:{{ userTest.id }}</p>
+    <p class="m-0">name:{{ userTest.name }}</p>
+    <p class="m-0">email:{{ userTest.email }}</p>
+
+    <input type="text" [(ngModel)]="userTest.name">
+    <input type="text" [(ngModel)]="userTest.email">
+
+    <button mat-raised-button (click)="updateUser(userTest)">修改 Update</button>
+    <button mat-raised-button class="bg-danger text-white" (click)="deleteUser(userTest)">刪除 Delete</button>
+  </div>
+  }
+
+</div>

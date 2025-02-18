@@ -1,4 +1,4 @@
-import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -8,6 +8,8 @@ import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingServ
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AngularFireModule } from '@angular/fire/compat';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -28,6 +30,15 @@ export const appConfig: ApplicationConfig = {
     UserTrackingService,
     provideFirestore(() => getFirestore()),
     providePerformance(() => getPerformance()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()), provideAnimationsAsync(),
+    importProvidersFrom(AngularFireModule.initializeApp({
+      apiKey: "AIzaSyCmzVR1xeyutcCDTgR8bdpmYU7WMOeKwDo",
+      authDomain: "sharetoboss.firebaseapp.com",
+      projectId: "sharetoboss",
+      storageBucket: "sharetoboss.firebasestorage.app",
+      messagingSenderId: "541957576326",
+      appId: "1:541957576326:web:298d35a8baa8e0de55e307",
+      measurementId: "G-48LQ5PGH9S"
+    })),
   ]
 };
